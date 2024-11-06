@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Demo Application Test-Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestCase Execution for Login, Register and Search(failed)">
+    <classes>
+      <class name="com.seleniumproject.tests.Search">
+        <methods>
+          <include name="teadDown"/>
+          <include name="verifySearchWithValidProduct"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.seleniumproject.tests.Search -->
+      <class name="com.seleniumproject.tests.Login">
+        <methods>
+          <include name="setUp"/>
+          <include name="VerifyLoginWithBlankEmailAndPassword"/>
+          <include name="teadDown"/>
+          <include name="verifyLoginWithValidCredentials"/>
+          <include name="VerifyLoginWithInValidEmaiValidPassword"/>
+          <include name="VerifyLoginWithValidEmailInvalidPassword"/>
+          <include name="VerifyLoginWithInValidEmaiInValidPassword"/>
+        </methods>
+      </class> <!-- com.seleniumproject.tests.Login -->
+      <class name="com.seleniumproject.tests.Register">
+        <methods>
+          <include name="VerifyUserRegistsrationValidations"/>
+          <include name="teadDown"/>
+          <include name="VerifyUserRegisstrationWithSubscription"/>
+          <include name="VerifyUserRegistrationWithMandatoryFields"/>
+          <include name="setUp"/>
+          <include name="VerifyUserRegistrationWithAlreadyRegisteredEmail"/>
+        </methods>
+      </class> <!-- com.seleniumproject.tests.Register -->
+    </classes>
+  </test> <!-- TestCase Execution for Login, Register and Search(failed) -->
+</suite> <!-- Failed suite [Automation Demo Application Test-Suite] -->
